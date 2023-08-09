@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    
+}
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none; 
+
+}
+img{
+    display: block;
+    max-width: 100%;
+}

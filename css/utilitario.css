@@ -1,0 +1,37 @@
+:root{
+    --primaria: #ffffff;
+    --cor1: #000000;
+    --cor2: #111111;
+    --cor3: #B2B2B2;
+    --cor4: #FFBB00;
+    --cor5: #E4A30B;
+    --tela: 1300px;
+}
+.flex{
+    display: flex;
+}
+.cor1{
+    background-color: var(--cor1);
+}
+.cor2{
+    background-color: var(--cor2);
+}
+.primaria{
+    color: var(--primaria);
+}
+.cor3{
+    color: var(--cor3);
+}
+.fontPopins{
+    font-family: "Poppins", sans-serif;
+}
+.fontRoboto{
+    font-family: "Roboto", sans-serif;
+}
+.tela{
+    max-width: var(--tela);
+    margin: 0 auto;
+}
+.detalhe{
+    color: var(--cor4);
+}

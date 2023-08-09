@@ -1,0 +1,131 @@
+.introducao-bicicletas{
+    padding: 3rem 2rem 3rem 2rem;
+}
+.introducao-bicicletas h1{
+    font-size: 4rem;
+    color: var(--primaria);
+}
+.introducao-bicicletas .span:first-child{
+    color: var(--cor3);
+    text-transform: uppercase;
+    font-size: 1.12rem;
+}
+
+.produto-informacao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 2rem 3rem 2rem;
+    gap: 2rem;
+    justify-content: left;
+}
+.produto-informacao img{
+    border-radius: 4px;
+}
+.produto-informacao ul li::before{
+    content: "";
+    height: 25px;
+    width: 20px;
+    display: inline-block;
+    background-size: cover;
+    padding-right: 5px;
+    margin-right: 7px;
+   
+}
+.produto-informacao ul li:first-child::before{
+    background-image: url(/img/icones/eletrica.svg);  
+}
+.produto-informacao ul li:nth-child(2):before{
+    background-image: url(/img/icones/carbono.svg);  
+}
+.produto-informacao ul li:nth-child(3):before{
+    background-image: url(/img/icones/velocidade.svg);  
+}
+.produto-informacao ul li:nth-child(4):before{
+    background-image: url(/img/icones/rastreador.svg);  
+}
+
+.produto-informacao .conteudo-produto h2{
+    font-size: 2rem;
+    line-height: 1.25;
+}
+.produto-informacao .conteudo-produto p, .produto-informacao .conteudo-produto li{
+    font-size: 1.125rem;
+    line-height: 1.35;
+    color: #595959;
+} 
+.produto-informacao .conteudo-produto li{
+    font-weight: 550;
+    display: flex; 
+    align-items: center;
+    margin-bottom: 1rem;
+   
+}
+.produto-informacao .conteudo-produto ul{
+    margin-top: 1.5rem;
+   
+}
+.produto-informacao .conteudo-produto p{
+    margin-top: 1.5rem;
+    max-width: 45ch;
+   
+}
+.produto-informacao .conteudo-produto a{
+    color: #332200;
+    background-color: #FFBF00;
+    padding: 0.7rem 3.5rem 0.7rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Poppins", sans-serif;;
+    background-image: url("/img/icones/seta.svg");
+    background-repeat: no-repeat;
+    background-position: 140px center;
+}
+.produto-informacao .conteudo-produto h2::before{
+    content: "";
+    height: 9px;
+    width: 14px;
+    background-color: var(--cor4);
+    display: block;
+    margin-bottom: 5px;
+}
+.produto-informacao .conteudo-produto .btn-caracteristicas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    justify-items: left;
+}
+.bg{
+    background-color: #111;
+}
+.bg h2{
+    color: var(--primaria);
+}
+.bg .conteudo-produto li{
+    color: var(--cor3);
+}
+.bg .conteudo-produto p{
+    color: var(--cor3);
+} 
+.produto-informacao .preco-produto{
+    color: var(--primaria);
+    position: absolute;
+    font-size: 1.2rem;
+    background-color: var(--cor1);
+    padding: 0.5rem 1rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    top: 15px;
+    left: -134px;
+}
+.produto-informacao .conteudo-produto{
+    position: relative;
+}
+.produto-informacao {
+    background-image: url("/img/dec/top-right.svg");
+    background-repeat: no-repeat;
+    background-position: right 50px;
+}

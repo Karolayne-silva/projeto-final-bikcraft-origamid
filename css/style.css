@@ -1,0 +1,11 @@
+
+
+@import "./global/global.css";
+@import "./global/header.css";
+
+@import "./utilitario.css";
+@import "./home.css";
+@import "./global/footer.css";
+@import "./bicicletas.css";
+@import "./seguros.css";
+@import "./termos.css";

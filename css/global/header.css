@@ -1,0 +1,33 @@
+.header {
+   justify-content: space-between;
+   padding: 2rem 2rem;
+   align-items: center;
+   margin: 0 auto;
+}
+.header img{
+    max-width: 100%;
+    height: 40px;
+}
+.navegacao{
+    gap: 2rem;
+    font-size: 0.875rem;
+}
+.navegacao a{
+    padding: 0.875rem 0px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.navegacao a::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    display: block;
+    transition: width 0.5s;
+    position: absolute;
+    margin-top: 5px;
+}
+.navegacao a:hover::after{
+    width: 80px;
+    background-color: #ffffff;
+}
+

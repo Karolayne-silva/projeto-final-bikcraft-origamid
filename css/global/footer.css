@@ -1,0 +1,46 @@
+.rodape{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 4rem 2rem 4rem 2rem;
+    gap: 1rem;
+}
+.informacoes a{
+    color: var(--cor3);
+    padding: 1rem 0px;
+}
+.rodape h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    font: 1.7rem;
+}
+.rodape li{
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+}
+.rodape .contatos li:nth-child(2)::after, .rodape .contatos li:last-child:after{
+    content: "";
+    height: 2px;
+    width: 300px;
+    display: block;
+    background-color: var(--cor2);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.rodape .redes-sociais{
+    gap: 2rem;
+}
+.rodape .informacoes a{
+    font-family: "Roboto", sans-serif;
+    
+}
+.rodape p{
+    color: var(--cor3);
+    grid-column: 1/2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+}
+.rodape .contatos {
+    padding-bottom: 2rem;
+}
