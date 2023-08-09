@@ -99,7 +99,7 @@
     justify-items: left;
 }
 .bg{
-    background-color: #111;
+    background: linear-gradient(to left, #111 70%, #fff 50%);
 }
 .bg h2{
     color: var(--primaria);
