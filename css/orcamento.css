@@ -1,0 +1,200 @@
+.form{
+    padding: 3rem 2rem 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: var(--primaria);
+      
+}
+.fundo-formulario{
+    background: linear-gradient(to bottom, #111 35%, #fff 0%);
+}
+.fundo-preto{
+    background-color: var(--cor1);
+    padding: 3rem;
+}
+.fundo-branco{
+    background-color: var(--primaria);
+    padding: 3rem;
+}
+.form h2{
+    font-size: 0.7rem;
+    color: #404040;
+    margin-bottom: 1rem;
+}
+
+.form .fundo-branco label{
+    color: var(--cor2);
+    display: block;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.fundo-branco h2::before, .fundo-preto h2::before{
+    content:"";
+    height: 7px;
+    width: 4px;
+    background-color: var(--cor4);
+    display: inline-block;
+    margin-right: 4px;
+}
+.fundo-branco input{
+    padding: 0.7rem;
+    background-color: #F7F7F7;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+}
+.divisao-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.divisao-grid input{
+    width: 350px;
+    display: block;
+}
+#cpf, #email{
+    width: 715px;
+}
+input:focus, select:focus{
+    outline: none;
+}
+.form .titulo-2{
+    margin-top: 3rem;
+}
+.divisao-grid select{
+    padding: 0.7rem;
+    width: 350px;
+    display: block;
+    background-color: #F7F7F7;
+    border: 1px solid #EDEDED;
+    /*remove a aparencia padrao do navegador*/
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+select:invalid {
+    color: #717171;
+}
+
+.form .fundo-branco .input-checked{
+    width: 20px; 
+    height: 20px;
+    border-radius: 4px;
+    background-color: #F7F7F7;
+}
+.form-checked{
+    display: flex;
+    align-items: center;
+}
+.btn-orcamento{
+    border: none;
+    background-color: #FFBF00;
+    padding: 1rem 1.6rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.fundo-branco{
+    background-image: url("/img/dec/bottom-right.svg");
+    background-repeat: no-repeat;
+    background-position: right 40px bottom 40px;
+}
+.form .fundo-preto h2{
+    color: var(--cor3);
+}
+
+.fundo-preto{
+    background-image: url("/img/dec/top-right.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 40px left 40px;
+}
+.fundo-preto .escolha{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.fundo-preto .escolha div{
+    background-color: #2E2E2E;
+    padding: 1.1rem;
+    border-radius: 5px;
+    border: 3px solid #2E2E2E;
+}
+.fundo-preto .custom-radio input{
+    display: none;
+}
+.fundo-preto .custom-radio input + label::before{
+    content: "";
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #9C9C9C;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+.fundo-preto .custom-radio input:checked + label::before{
+    box-shadow: inset 0 0 0 3px var(--primaria);
+    border: 1px solid #9c9c9c;
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box; 
+    padding: 5px;
+}
+.input-flex{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.input-flex .custom-radio{
+    background-color: #2E2E2E;
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+.fundo-preto .titulo-2{
+    margin-top: 3rem;
+}
+
+
+
+.form .fundo-preto .radio-conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #fff;
+    color: #595959;
+    border: none;
+    display: none;
+}
+.radio-conteudo li{
+    font-size: 0.7rem;
+    display: flex;
+    margin-top: 5px;
+    
+}
+.radio-conteudo li::before{
+    content: "";
+    height: 15px;
+    width: 10px;
+    display: inline-block;
+    background-size: cover;
+    padding-right: 5px;
+    margin-right: 7px;
+}
+.radio-conteudo ul li:first-child::before{
+    background-image: url("/img/icones/eletrica.svg");  
+}
+.radio-conteudo ul li:nth-child(2):before{
+    background-image: url("/img/icones/carbono.svg");  
+}
+.radio-conteudo ul li:nth-child(3):before{
+    background-image: url("/img/icones/velocidade.svg");  
+}
+.radio-conteudo ul li:nth-child(4):before{
+    background-image: url("/img/icones/rastreador.svg");  
+}

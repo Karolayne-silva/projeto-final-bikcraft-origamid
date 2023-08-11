@@ -18,4 +18,13 @@ a{
 img{
     display: block;
     max-width: 100%;
+    height: auto;
+}
+.btn{
+    border-radius: 5px;
+    background-color: #FFBF00;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #332200;
+    font-family: "Poppins", sans-serif;
 }

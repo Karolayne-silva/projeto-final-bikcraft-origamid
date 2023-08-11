@@ -1,0 +1,113 @@
+#bicicleta-interna{
+    padding: 7rem 2rem 12rem 2rem;
+}
+.bicicleta-interna-seguros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 3rem 4rem;
+    
+}
+.bicicleta-interna-conteudo{
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    justify-items: flex-start;
+    gap: 1rem;
+}
+.bicicleta-interna-seguros .bicicleta-interna-conteudo h1{
+    font-size: 3.5rem;
+    line-height: 1.125;
+    max-width: 15ch;
+    color: var(--primaria);
+}
+.bicicleta-interna-seguros .bicicleta-interna-conteudo p{
+    color: var(--cor3);
+    max-width: 40ch;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.bicicleta-interna-conteudo img{
+    height: 100%;
+    object-fit: cover;
+}
+.bicicleta-interna-img{
+    margin-bottom: -150px;
+    margin-top: -150px;
+}
+.bicicleta-interna-footer{
+    padding-top: 6rem;
+}
+.bicicleta-interna-conteudo a{
+    padding: 1rem 2rem;
+}
+.bicicleta-interna-conteudo{
+    background-image: url("/img/dec/bottom-right.svg"), url("/img/dec/top-right.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 5px bottom, right 5px top;
+}
+.bicicleta-interna-informacoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 2rem 12rem 2rem; 
+}
+.bicicleta-interna-tags{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.bicicleta-interna-tags a{
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem; 
+    text-align: center;
+}
+.bicicleta-interna-tags span{
+    background-color: var(--cor1);
+    color: #9c9c9c;
+    border-radius: 5px;
+    display: block;
+    padding: 0.2rem 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.7rem;
+}
+.bicicleta-interna-tags span + span{
+    margin-top: 2px;
+}
+.bicicleta-interna-informacoes .info-conteudo p{
+    color: #B2B2B2;
+    font-size: 1.5rem;
+    max-width: 40ch;
+}
+.bicicleta-interna-informacoes .info-conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.bicicleta-interna-informacoes .info-conteudo h2{
+    font-size: 0.8rem;
+    color: var(--primaria);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.bicicleta-interna-informacoes .info-conteudo .info-conteudo-info{
+    background-color: var(--cor1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.bicicleta-interna-informacoes .info-conteudo .info-conteudo-info p{
+    font-size: 0.9rem;
+    max-width: 30ch;
+}
+.bicicleta-interna-informacoes .info-conteudo .info-conteudo-info h2{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

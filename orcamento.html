@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <title>Orçamento | bikcraft</title>
+</head>
+<body>
+    <div class="cor1">
+        <header class="header flex cor1 primaria tela">
+            <a href="./index.html"><img src="./img/bikcraft.svg" alt="logo principal bikcraft"></a>
+            
+            <nav>
+                <ul class="flex navegacao fontPopins">
+                    <li><a class="primaria" href="/bicicletas.html">Bicicletas</a></li>
+                    <li><a class="primaria" href="/seguros.html">Seguros</a></li>
+                    <li><a class="primaria" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="cor2">
+        <section class="introducao-seguros tela seg-decoracao">
+            <span class="fontRoboto span-seguros">Cotações no seu e-mail</span>
+            <h1 class="fontPopins">Solicite um orçamento<span class="detalhe">.</span></h1>
+        </section>
+    </div>
+    <div class="fundo-formulario">
+        <div class="form tela">
+            <div class="fundo-preto">
+
+                <h2 class="fontPopins titulo-1">BIKCRAFT OU SEGURO ?</h2>
+                <div class="input-flex fontPopins">
+                    <div class="custom-radio" id="custom-radio">
+                        <input type="radio" id="bikcraft" name="bikseg" value="bikcraft">
+                        <label for="bikcraft">Bikcraft</label>
+                    </div>
+                    
+                    <div class="custom-radio">
+                        <input type="radio" id="seguro" name="bikseg" value="seguro">
+                        <label for="seguro">Seguro</label><br>
+                    </div>
+                </div>
+                
+                
+
+                <h2 class="fontPopins titulo-2">ESCOLHA A SUA:</h2>
+
+                <div class="escolha fontPopins">
+                    <div class="custom-radio">
+                        <input type="radio" id="nimbus" name="escolha" value="bikcraft">
+                        <label for="nimbus">Nimbus Stark</label>
+                    </div>
+
+                    <div class="radio-conteudo" id="conteudo-nimbus">
+                        <ul class="fontPopins">
+                            <li>Motor Elétrico</li>
+                            <li>Fibra de Carbono</li>
+                            <li>40 km/h</li>
+                            <li>Rastreador</li>
+                        </ul>
+                        <img src="/img/bicicletas/nimbus.jpg" alt="bicicleta nimbus">
+                    </div>
+
+                    <div class="custom-radio">
+                        <input type="radio" id="magic" name="escolha" value="seguro">
+                        <label for="magic">Magic Might</label><br>
+                    </div>
+
+
+                    <div class="radio-conteudo" id="conteudo-magic">
+                        <ul class="fontPopins">
+                            <li>Motor Elétrico</li>
+                            <li>Fibra de Carbono</li>
+                            <li>40 km/h</li>
+                            <li>Rastreador</li>
+                        </ul>
+                        <img src="/img/bicicletas/magic.jpg" alt="bicicleta magic">
+                    </div>
+
+
+                    <div class="custom-radio">
+                        <input type="radio" id="nebula" name="escolha" value="seguro">
+                        <label for="nebula">Nebula Cosmic</label><br>
+                    </div>
+
+
+                    <div class="radio-conteudo" id="conteudo-nebula">
+                        <ul class="fontPopins">
+                            <li>Motor Elétrico</li>
+                            <li>Fibra de Carbono</li>
+                            <li>40 km/h</li>
+                            <li>Rastreador</li>
+                        </ul>
+                        <img src="/img/bicicletas/nebula.jpg" alt="bicicleta nebula">
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+            <div class="fundo-branco">
+                <h2 class="fontPopins">DADOS PESSOAIS</h2>
+                <form class="fontPopins">
+                    <div class="divisao-grid">
+                        <div>   
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                       
+                        <div>
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome">
+                        </div>
+                        
+                    </div>
+                    
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </form>
+                <h2 class="fontPopins titulo-2">ENTREGA</h2>
+                <form class="fontPopins">
+                    <div class="divisao-grid parte2">
+                        <div>
+                            <label for="cep">CEP</label>
+                            <input type="number" name="cep" id="cep">
+                        </div>
+                        <div>
+                            <label for="numero">Número</label>
+                            <input type="number" name="numero" id="numero">
+                        </div>
+                        <div>
+                            <label for="log">Logradouro</label>
+                            <input type="text" name="log" id="log" placeholder="Rua, avenida...">
+    
+                        </div>
+                        <div>
+                            <label for="bairro">Bairro</label>
+                            <input type="text" name="bairro" id="bairro">
+    
+                        </div>
+                        <div>
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="cidade" id="cidade">
+                        </div>
+                        <div>
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                            <option value="DF">DF</option>
+                            </select> 
+                        </div>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input class="input-checked" type="checkbox" name="aceito" id="aceito">
+                        <label class="label-checked" for="aceito">Li e aceito os termos e condições.</label>
+                    </div>
+                    <button class="btn-orcamento fontPopins">SOLICITAR ORÇAMENTO</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="cor1">
+        <div class="rodape tela">
+            <div class="titulo">
+                <img src="./img/bikcraft.svg" alt="bikcraft titulo">
+            </div>
+            <div class="contatos">
+                <h3 class="fontRoboto primaria">Contato</h3>
+                <ul class="cor3 fontRoboto">
+                    <li>+55 21 9999-9999</li>
+                    <li>contato@bikcraft.com</li>
+                    <li>Rua Ali Perto, 42 - Botafogo</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul>
+                <div class="redes-sociais flex">
+                    <a href="#"><img src="./img/redes/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="./img/redes/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="./img/redes/youtube.svg" alt="youtube"></a>
+                </div>
+
+            </div>
+            <div class="informacoes">
+                <h3 class="fontRoboto primaria">Informações</h3>
+                <ul>
+                    <li><a href="#">Bicicletas</a></li>
+                    <li><a href="#">Seguros</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Termos e Condições</a></li>
+                </ul>
+                
+            </div>
+            <p class="fontRoboto">Bikcraft © Alguns direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        const inputBranco = document.getElementById("bikcraft");
+        const customBranca = document.getElementById("custom-radio");
+        
+        const nimbusRadio = document.getElementById("nimbus");
+        const magicRadio = document.getElementById("magic");
+        const nebulaRadio = document.getElementById("nebula");
+        
+        const contNimbus = document.getElementById("conteudo-nimbus");
+        const contMagic = document.getElementById("conteudo-magic");
+        const contNebula = document.getElementById("conteudo-nebula");
+
+
+        inputBranco.addEventListener('click', () => {
+            customBranca.style.backgroundColor = "var(--primaria)"
+            customBranca.style.color = "var(--cor1)"
+            customBranca.style.border = "3px solid #FFBF00";
+        });
+
+
+        nimbusRadio.addEventListener('click', () => {
+            contNimbus.style.display = "block";
+            contNimbus.style.display = "grid";
+            contNebula.style.display = "none";
+            contMagic.style.display = "none";
+        });
+
+        magicRadio.addEventListener('click', () => {
+            contMagic.style.display = "block";
+            contMagic.style.display = "grid";
+            contNimbus.style.display = "none";
+            contNebula.style.display = "none";
+        });
+
+        nebulaRadio.addEventListener('click', () => {
+            contNebula.style.display = "block";
+            contNebula.style.display = "grid"
+            contNimbus.style.display = "none";
+            contMagic.style.display = "none";
+        });
+
+
+    </script>
+</body>
+</html>
