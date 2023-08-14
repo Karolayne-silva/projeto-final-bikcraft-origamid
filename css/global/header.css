@@ -11,23 +11,26 @@
 .navegacao{
     gap: 2rem;
     font-size: 0.875rem;
+    flex-wrap: wrap;
 }
 .navegacao a{
-    padding: 0.875rem 0px;
+    padding: 16px 0;
     font-size: 1.2rem;
     font-weight: 600;
+    display: inline-block;
+    position: relative;
 }
 .navegacao a::after{
     content: "";
-    height: 3px;
-    width: 0;
+    height: 2px;
+    width: 0px;
     display: block;
-    transition: width 0.5s;
-    position: absolute;
+    transition: 0.5s;
     margin-top: 5px;
+    position: absolute;
+    background-color: #ffffff;
 }
 .navegacao a:hover::after{
-    width: 80px;
-    background-color: #ffffff;
+    width: 100%;
 }
 

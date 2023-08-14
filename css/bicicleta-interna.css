@@ -8,6 +8,9 @@
     padding: 3rem 4rem;
     
 }
+#span-preco-bicicleta{
+    font-size: 1.5rem;
+}
 .bicicleta-interna-conteudo{
     display: grid;
     grid-template-columns: auto;
@@ -49,7 +52,7 @@
 .bicicleta-interna-informacoes{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 3rem 2rem 12rem 2rem; 
+    padding: 3rem 2rem 5rem 2rem; 
 }
 .bicicleta-interna-tags{
     display: grid;
@@ -110,4 +113,31 @@
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
+}
+.info-conteudo-ficha{
+    background-color: var(--cor1);
+    padding: 2rem;
+    border-radius: 5px;
+}
+.info-conteudo-ficha span{
+    color: #B2B2B2;
+}
+.bicicleta-interna-informacoes .info-conteudo .info-conteudo-ficha p::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: var(--cor2);
+    display: block;
+    position: absolute;
+    bottom: -7px; 
+    left: 0;
+}
+.bicicleta-interna-informacoes .info-conteudo .info-conteudo-ficha p{
+    font-size: 1rem;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    max-width: initial;
+    position: relative;
+    color: #CCCCCC;
 }
