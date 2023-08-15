@@ -1,7 +1,7 @@
 .form{
     padding: 3rem 2rem 3rem 2rem;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 5fr 7fr;
     color: var(--primaria);
       
 }
@@ -38,32 +38,36 @@
     display: inline-block;
     margin-right: 4px;
 }
-.fundo-branco input{
-    padding: 0.7rem;
-    background-color: #F7F7F7;
-    border: 1px solid #EDEDED;
-    border-radius: 4px;
-}
+
 .divisao-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0px 20px;
 }
-.divisao-grid input{
-    width: 350px;
-    display: block;
+.divisao-grid input, .divisao-grid select{
+    padding: 1rem;
+    width: 100%;
+    background-color: #F7F7F7;
+    border: 2px solid #EDEDED;
+    border-radius: 4px;
 }
-#cpf, #email{
-    width: 715px;
+
+.col-2{
+    grid-column: span 2;
 }
+
 input:focus, select:focus{
     outline: none;
+    border-color: #FFBB00;
+    border-width: 2px; 
+    background-color: var(--primaria);
+    box-shadow: 0 0 0 2px #fea;
+    box-sizing: border-box;
 }
 .form .titulo-2{
     margin-top: 3rem;
 }
 .divisao-grid select{
-    padding: 0.7rem;
-    width: 350px;
     display: block;
     background-color: #F7F7F7;
     border: 1px solid #EDEDED;
@@ -78,17 +82,6 @@ input:focus, select:focus{
 select:invalid {
     color: #717171;
 }
-
-.form .fundo-branco .input-checked{
-    width: 20px; 
-    height: 20px;
-    border-radius: 4px;
-    background-color: #F7F7F7;
-}
-.form-checked{
-    display: flex;
-    align-items: center;
-}
 .btn-orcamento{
     border: none;
     background-color: #FFBF00;
@@ -96,8 +89,9 @@ select:invalid {
     border-radius: 5px;
     font-size: 1.1rem;
     font-weight: 600;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
+
 .fundo-branco{
     background-image: url("/img/dec/bottom-right.svg");
     background-repeat: no-repeat;

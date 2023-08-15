@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <body>
     <div class="cor1">
         <header class="header flex cor1 primaria tela">
-            <a href="../index.html"><img src="./img/bikcraft.svg" alt="logo principal bikcraft"></a>
+            <a href="../index.html"><img src="../img/bikcraft.svg" alt="logo principal bikcraft"></a>
             <nav>
                 <ul class="flex navegacao fontPopins">
                     <li><a class="primaria" href="../bicicletas.html">Bicicletas</a></li>
@@ -31,7 +31,7 @@
             <h1 class="fontPopins">nosso contato<span class="detalhe">.</span></h1>
         </section>
     </div>
-    <section class="page-contato-bg">
+    <main class="page-contato-bg">
         <div class="page-contato tela">
             <div class="contato-informacoes">
                 <h1 class="fontPopins">Loja Online</h1>
@@ -59,23 +59,60 @@
                     <input type="text" name="nome" id="nome" placeholder="Seu nome">
                 </div>
                 <div>
-                    <label for="">Número</label>
-                    <input type="number" name="" id="" placeholder="(21) 9999-9999">
+                    <label for="numero">Número</label>
+                    <input type="number" name="numero" id="numero" placeholder="(21) 9999-9999">
                 </div>
                 <div class="grid-email">
-                    <label for="">E-mail</label>
-                    <input type="email" name="" id="" placeholder="contato@gmail.com">
+                    <label for="email-input">E-mail</label>
+                    <input type="email" name="email-input" id="email-input" placeholder="contato@gmail.com">
                 </div>
                 <div class="grid-textarea">
-                    <label for="msg">Mensagem</label><br>
-	                <textarea id="msg" name="msg" rows="5" placeholder="O que você precisa?"></textarea>
+                    <label for="text">Mensagem</label><br>
+	                <textarea id="text" name="text" rows="5" placeholder="O que você precisa?"></textarea>
                 </div>
                 <button class="btn">Enviar Mensagem</button>
                 
             </div>
         </div>
         
-    </section>
+    </main>
+    <article class="locais-container">
+        <div class="locais tela">
+            <h2 class="fontPopins">lojas Locais<span class="detalhe">.</span></h2>
+            <div class="container-items">
+                <div class="primaria-bg">
+                    <img src="/img/lojas/rj.jpg" alt="mapa rio de janeiro">
+                    <div class="container-items-conteudo">
+                        <h3>Rio de Janeiro</h3>
+                        <div class="locais-endereco">
+                            <p>Rua Ali Perto, 25</p>
+                            <p>São Paulo - SP</p>
+                        </div>
+                        <div class="locais-contato">
+                            <p>sp@bikcraft.com</p>
+                            <p>11 9999-9999</p>
+                        </div>
+                        <p class="fontPopins "><img src="/img/icones/horario.svg" alt="">08-18h de seg à dom</p>
+                    </div>
+                </div>
+                <div class="primaria-bg">
+                    <img src="/img/lojas/sp.jpg" alt="mapa são paulo">
+                    <div class="container-items-conteudo">
+                        <h3>São Paulo</h3>
+                        <div class="locais-endereco">
+                            <p>Rua Ali Perto, 25</p>
+                            <p>Rio de Janeiro - RJ</p>
+                        </div>
+                        <div class="locais-contato">
+                            <p>rio@bikcraft.com</p>
+                            <p>21 9999-9999</p>
+                        </div>
+                        <p class="fontPopins"><img src="/img/icones/horario.svg" alt="">08-18h de seg à dom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
     <footer class="cor1 bicicleta-interna-footer" id="contato">
         <div class="rodape tela">
             <div class="titulo">

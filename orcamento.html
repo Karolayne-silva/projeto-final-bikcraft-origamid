@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <body>
     <div class="cor1">
         <header class="header flex cor1 primaria tela">
-            <a href="../index.html"><img src="./img/bikcraft.svg" alt="logo principal bikcraft"></a>
+            <a href="../index.html"><img src="../img/bikcraft.svg" alt="logo principal bikcraft"></a>
             
             <nav>
                 <ul class="flex navegacao fontPopins">
@@ -121,17 +121,19 @@
                             <input type="text" name="sobrenome" id="sobrenome">
                         </div>
                         
-                    </div>
                     
-                    <label for="cpf">CPF</label>
-                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                </form>
-                <h2 class="fontPopins titulo-2">ENTREGA</h2>
-                <form class="fontPopins">
-                    <div class="divisao-grid parte2">
+                        <div class="col-2">
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" id="cpf">
+                        </div>
+                    
+                        <div class="col-2">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    
+                        <h2 class="fontPopins titulo-2 col-2">ENTREGA</h2>
+                
                         <div>
                             <label for="cep">CEP</label>
                             <input type="number" name="cep" id="cep">
@@ -142,7 +144,7 @@
                         </div>
                         <div>
                             <label for="log">Logradouro</label>
-                            <input type="text" name="log" id="log" placeholder="Rua, avenida...">
+                            <input type="text" name="log" id="log">
     
                         </div>
                         <div>
@@ -156,42 +158,11 @@
                         </div>
                         <div>
                             <label for="estado">Estado</label>
-                            <select name="estado" id="estado" required>
-                            <option value="" disabled selected>Selecione</option>
-                            <option value="AC">AC</option>
-                            <option value="AL">AL</option>
-                            <option value="AP">AP</option>
-                            <option value="AM">AM</option>
-                            <option value="BA">BA</option>
-                            <option value="CE">CE</option>
-                            <option value="ES">ES</option>
-                            <option value="GO">GO</option>
-                            <option value="MA">MA</option>
-                            <option value="MT">MT</option>
-                            <option value="MS">MS</option>
-                            <option value="MG">MG</option>
-                            <option value="PA">PA</option>
-                            <option value="PB">PB</option>
-                            <option value="PR">PR</option>
-                            <option value="PE">PE</option>
-                            <option value="PI">PI</option>
-                            <option value="RJ">RJ</option>
-                            <option value="RN">RN</option>
-                            <option value="RS">RS</option>
-                            <option value="RO">RO</option>
-                            <option value="RR">RR</option>
-                            <option value="SC">SC</option>
-                            <option value="SP">SP</option>
-                            <option value="SE">SE</option>
-                            <option value="TO">TO</option>
-                            <option value="DF">DF</option>
-                            </select> 
+                            <input type="text" name="estado" id="estado"> 
                         </div>
                     </div>
-                    <div class="custom-checkbox">
-                        <input class="input-checked" type="checkbox" name="aceito" id="aceito">
-                        <label class="label-checked" for="aceito">Li e aceito os termos e condições.</label>
-                    </div>
+
+                    
                     <button class="btn-orcamento fontPopins">SOLICITAR ORÇAMENTO</button>
                 </form>
             </div>
@@ -230,48 +201,6 @@
             <p class="fontRoboto">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
-    <script>
-        const inputBranco = document.getElementById("bikcraft");
-        const customBranca = document.getElementById("custom-radio");
-        
-        const nimbusRadio = document.getElementById("nimbus");
-        const magicRadio = document.getElementById("magic");
-        const nebulaRadio = document.getElementById("nebula");
-        
-        const contNimbus = document.getElementById("conteudo-nimbus");
-        const contMagic = document.getElementById("conteudo-magic");
-        const contNebula = document.getElementById("conteudo-nebula");
-
-
-        inputBranco.addEventListener('click', () => {
-            customBranca.style.backgroundColor = "var(--primaria)"
-            customBranca.style.color = "var(--cor1)"
-            customBranca.style.border = "3px solid #FFBF00";
-        });
-
-
-        nimbusRadio.addEventListener('click', () => {
-            contNimbus.style.display = "block";
-            contNimbus.style.display = "grid";
-            contNebula.style.display = "none";
-            contMagic.style.display = "none";
-        });
-
-        magicRadio.addEventListener('click', () => {
-            contMagic.style.display = "block";
-            contMagic.style.display = "grid";
-            contNimbus.style.display = "none";
-            contNebula.style.display = "none";
-        });
-
-        nebulaRadio.addEventListener('click', () => {
-            contNebula.style.display = "block";
-            contNebula.style.display = "grid"
-            contNimbus.style.display = "none";
-            contMagic.style.display = "none";
-        });
-
-
-    </script>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>

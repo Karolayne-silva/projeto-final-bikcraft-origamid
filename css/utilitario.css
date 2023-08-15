@@ -19,6 +19,9 @@
 .primaria{
     color: var(--primaria);
 }
+.primaria-bg{
+    background-color: var(--primaria);
+}
 .cor3{
     color: var(--cor3);
 }
