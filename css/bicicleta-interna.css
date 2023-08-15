@@ -53,7 +53,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 3rem 2rem 5rem 2rem; 
+    gap: 20px;
+    align-items: start;
 }
+.bicicleta-interna-info-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.bicicleta-interna-info-img img{
+    flex: 1;
+    min-width: 250px;
+    border-radius: 5px;
+}
+.bicicleta-interna-info-img img:first-child{
+    min-width: 100%;
+} 
+
+
 .bicicleta-interna-tags{
     display: grid;
     grid-template-columns: auto 1fr;
