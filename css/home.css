@@ -89,6 +89,9 @@
     color: #595959;
     font-weight: 500;
 }
+.bicicletas .itens a{
+    display: block;
+}
 .bicicletas span{
     color: var(--cor4);
 }
@@ -101,10 +104,10 @@
     position: relative;
     bottom: 5px;
     margin-right: 4px;
-    transition: width 0.5s;
+    transition: width 0.2s;
 
 }
-.bicicletas h3:hover::before{
+.bicicletas a:hover h3::before{
     width: 25px;
 }
 .bicicletas span::before{
