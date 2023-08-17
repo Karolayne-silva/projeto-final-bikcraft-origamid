@@ -48,6 +48,14 @@
     border: 2px solid #EDEDED;
     border-radius: 4px;
 }
+.fundo-branco input:focus{
+    outline: none;
+    border-color: #FFBB00;
+    border-width: 2px; 
+    background-color: var(--primaria);
+    box-shadow: 0 0 0 2px #fea;
+    box-sizing: border-box;
+}
 
 .col-2{
     grid-column: span 2;
@@ -94,6 +102,7 @@
     border-radius: 4px;
     cursor: pointer;
     margin-top: 1rem;
+    border: 1px solid #2E2E2E;
 } 
 .fundo-preto h2{
     grid-column: span 2;
@@ -135,6 +144,14 @@
 .fundo-preto input:checked + label::before{
     border-color: #717171;
     box-shadow: inset 0 0 0 3px var(--primaria), inset 0 0 0 5px #717171;
+}
+.fundo-preto label:hover{
+    background-color: #404040;
+}
+.fundo-preto input:focus + label{
+    box-shadow: 0 0 0 2px #FFBB00;
+    border-color: var(--cor1);
+    
 }
 .input-flex{
     display: grid;

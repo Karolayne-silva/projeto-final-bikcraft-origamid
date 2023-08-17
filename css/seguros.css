@@ -56,7 +56,9 @@
     padding: 1.5rem;
     font-weight: 550;
     color: var(--cor2);
-    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;  
 }
 .perguntas-frequentes li:first-child{
     background-image: url("/img/icones/seta-abrir.svg");
@@ -77,6 +79,7 @@
     max-width: 80ch;
     padding-left: 20px;
     margin-top: 1rem;
+    grid-column: span 2;
 }
 .seg-decoracao{
     background-image: url("/img/dec/top-right.svg");
