@@ -34,30 +34,24 @@
         </section>
     </div>
     <div class="fundo-formulario">
-        <div class="form tela">
+        <form class="form tela fontPopins">
             <div class="fundo-preto">
-
+                
                 <h2 class="fontPopins titulo-1">BIKCRAFT OU SEGURO ?</h2>
-                <div class="input-flex fontPopins">
-                    <div class="custom-radio" id="custom-radio">
-                        <input type="radio" id="bikcraft" name="bikseg" value="bikcraft">
-                        <label for="bikcraft">Bikcraft</label>
-                    </div>
+                
                     
-                    <div class="custom-radio">
-                        <input type="radio" id="seguro" name="bikseg" value="seguro">
-                        <label for="seguro">Seguro</label><br>
-                    </div>
-                </div>
-                
-                
+                <input type="radio" id="bikcraft" name="bikseg" value="bikcraft">
+                <label for="bikcraft">Bikcraft</label>
+                    
+                <input type="radio" id="seguro" name="bikseg" value="seguro">
+                <label for="seguro">Seguro</label><br>
+                    
 
-                <h2 class="fontPopins titulo-2">ESCOLHA A SUA:</h2>
-
-                <div class="escolha fontPopins">
-                    <div class="custom-radio">
+                <div class="escolha fontPopins" id="orcamento-bikcraft">
+                    <h3 class="fontPopins">ESCOLHA A SUA:</h3>
+                    <div>
                         <input type="radio" id="nimbus" name="escolha" value="bikcraft">
-                        <label for="nimbus">Nimbus Stark</label>
+                        <label for="nimbus">Nimbus Stark <span>R$ 4999</span></label>
                     </div>
 
                     <div class="radio-conteudo" id="conteudo-nimbus">
@@ -70,11 +64,10 @@
                         <img src="../img/bicicletas/nimbus.jpg" alt="bicicleta nimbus">
                     </div>
 
-                    <div class="custom-radio">
+                    <div>
                         <input type="radio" id="magic" name="escolha" value="seguro">
-                        <label for="magic">Magic Might</label><br>
+                        <label for="magic">Magic Might <span>R$ 2499</span></label>
                     </div>
-
 
                     <div class="radio-conteudo" id="conteudo-magic">
                         <ul class="fontPopins">
@@ -87,9 +80,9 @@
                     </div>
 
 
-                    <div class="custom-radio">
+                    <div>
                         <input type="radio" id="nebula" name="escolha" value="seguro">
-                        <label for="nebula">Nebula Cosmic</label><br>
+                        <label for="nebula">Nebula Cosmic <span>R$ 3999</span></label>
                     </div>
 
 
@@ -105,11 +98,24 @@
 
                     
                 </div>
-                
+                <div class="escolha fontPopins" id="orcamento-seguro">
+                    <h3 class="fontPopins plano-titulo">ESCOLHA O PLANO:</h3>
+
+                    <div>
+                        <input type="radio" id="prata" name="escolha" value="biprata">
+                        <label for="prata">Prata <span>R$ 199</span></label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="ouro" name="escolha" value="ouro">
+                        <label for="ouro">Ouro <span>R$ 299</span></label>
+                    </div>
+                </div>
+            
             </div>
             <div class="fundo-branco">
                 <h2 class="fontPopins">DADOS PESSOAIS</h2>
-                <form class="fontPopins">
+                
                     <div class="divisao-grid">
                         <div>   
                             <label for="nome">Nome</label>
@@ -164,9 +170,9 @@
 
                     
                     <button class="btn-orcamento fontPopins">SOLICITAR ORÇAMENTO</button>
-                </form>
+                
             </div>
-        </div>
+        </form>
     </div>
     <footer class="cor1">
         <div class="rodape tela">
