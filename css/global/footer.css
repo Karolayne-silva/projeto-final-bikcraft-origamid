@@ -12,7 +12,7 @@
     text-transform: uppercase;
     font-weight: 500;
     margin-bottom: 1.2rem;
-    font: 1.7rem;
+    font-size: 1.2rem;
 }
 .rodape li{
     font-size: 1.1rem;
@@ -43,4 +43,34 @@
 }
 .rodape .contatos {
     padding-bottom: 2rem;
+}
+@media (max-width: 800px){
+    .rodape{
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem 2rem 3rem 2rem;
+    }
+    .rodape .titulo{
+        grid-column: span 2;
+        padding-bottom: 15px;
+    }
+   
+}
+@media (max-width: 600px){
+    .rodape{
+        padding: 3rem 1.5rem 3rem 1.5rem;
+    }
+}
+@media (max-width: 500px){
+    .rodape{
+        grid-template-columns: 1fr;
+    }
+    .rodape .titulo{
+        grid-column: 1;
+    }
+    .rodape li{
+        font-size: 1rem;
+    }
+    .rodape .redes-sociais img{
+        height: 30px;
+    }
 }

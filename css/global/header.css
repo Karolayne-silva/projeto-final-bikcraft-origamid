@@ -3,6 +3,8 @@
    padding: 2rem 2rem;
    align-items: center;
    margin: 0 auto;
+   gap: 40px;
+   flex-wrap: wrap;
 }
 .header img{
     max-width: 100%;
@@ -34,3 +36,40 @@
     width: 100%;
 }
 
+@media  (max-width:1000px){
+    .navegacao a{
+        background-color: var(--cor2);
+        padding: 12px 15px;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    .navegacao a:hover{
+        background-color: #2e2e2e;
+    }
+    .navegacao a::after{
+        display: none;
+    }
+    .navegacao{
+        gap: 20px;
+    }
+    .header img{
+        height: 35px;
+    }
+}
+@media (max-width:600px){
+    .header{
+        flex-direction: column;
+    }
+    .navegacao{
+        gap: 12px;
+        
+    }
+    .navegacao a{
+        padding: 12px 10px;
+    }
+    .header {
+        
+        padding: 2rem 1.5rem 2rem 1.5rem;
+        
+     }
+}

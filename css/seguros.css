@@ -13,11 +13,11 @@
 .seguros-vantagens{
     padding: 4rem 2rem 5rem 2rem;
 }
-.seguros-vantagens h1{
+.seguros-vantagens h2{
     font-size: 4rem;
     color: var(--primaria);
 }
-.seguros-vantagens .vantagens-item h2{
+.seguros-vantagens .vantagens-item h3{
     color: var(--primaria);
     font-size: 1.5rem;
     line-height: 1.5;
@@ -38,13 +38,13 @@
 .perguntas-frequentes{
     padding: 4rem 2rem 4rem 2rem;
 }
-.perguntas-frequentes h1{
+.perguntas-frequentes h2{
     font-size: 4rem;
 }
 .perguntas-frequentes .perguntas{
     margin-top: 2rem;
 }
-.perguntas-frequentes li::before{
+.perguntas-frequentes dt::before{
     content: "";
     height: 5px;
     width: 10px;
@@ -52,25 +52,28 @@
     display: inline-block;
     margin-right: 10px;
 }
-.perguntas-frequentes li{
-    padding: 1.5rem;
-    font-weight: 550;
-    color: var(--cor2);
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;  
-}
-.perguntas-frequentes li:first-child{
+.perguntas-frequentes dt::after{
+    content: "";
+    height: 5px;
+    width: 15px;
     background-image: url("/img/icones/seta-abrir.svg");
     background-repeat: no-repeat;
-    background-position: 97% 30px;
+    display: inline-block;
 }
-.perguntas-frequentes li:not(:first-child){
-    background-image: url("/img/icones/seta-fechar.svg");
-    background-repeat: no-repeat;
-    background-position: 97% 30px;
+
+.perguntas > div{
+    padding: 1rem;
+    font-weight: 550;
+    color: var(--cor2);  
 }
-.perguntas-frequentes li:nth-child(odd){
+.perguntas dt{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    cursor: pointer;
+}
+
+.perguntas > div:nth-child(odd){
     background-color: #f7f7f7;
 }
 .perguntas .resposta{
@@ -78,8 +81,7 @@
     font-weight: 400;
     max-width: 80ch;
     padding-left: 20px;
-    margin-top: 1rem;
-    grid-column: span 2;
+    margin-top: 1rem; 
 }
 .seg-decoracao{
     background-image: url("/img/dec/top-right.svg");
@@ -90,4 +92,212 @@
     background-image: url("/img/dec/bottom-left.svg"), url("/img/dec/bottom-right.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 3% 530px, 97% 530px;
+}
+
+
+/*SEGUROS HOME*/
+/* #seguros .seguros h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    grid-column: 1;
+    padding-top: 0;
+   
+} */
+.seguros{
+    background-image: url("/img/dec/bottom-left.svg");
+    background-repeat: no-repeat;
+    background-position: 3% 95%;
+}
+.seguros h2{
+    color: var(--primaria);
+    font-size: 4rem;
+    line-height: 1.125;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.seguros .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 3rem;
+    align-items: center;
+    padding: 4rem 2rem 4rem 2rem;
+}
+.seguros .seguros-item{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 2rem 2rem 2rem 3rem;
+    border-radius: 4px;
+    gap: 0px 2rem;
+    color: var(--primaria);
+   
+}
+.seguros h2{
+    grid-column: 1/-1;
+}
+
+.seguros h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.seguros .planos li{
+    color: var(--primaria);
+}
+
+.seguros .seguros-item .span2{
+    font-size: 0.7rem;
+    color: #9C9C9C;
+}
+
+.seguros .seguros-item .preco{
+    color: var(--primaria);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.seguros-item a{
+    color: #332200;
+    background-color: #FFBF00;
+    padding: 0.7rem 1.4rem;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    grid-column: 1;
+    justify-self: left;
+}
+
+@media (max-width: 1200px){
+    .introducao-seguros h1, .seguros-vantagens h2, .perguntas-frequentes h2{
+        font-size: 3.5rem;
+    }
+
+}
+@media (max-width: 1000px){
+    .seguros .grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 1rem 2rem 4rem 2rem;
+        
+    }
+    .seg-decoracao{
+        background-image: none;
+    }
+    .seguros{
+        background-image: none;
+    }
+    .seguros-vantagens .vantagens{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .seguros-vantagens h2{
+        font-size: 3.5rem;
+        
+    }
+    .introducao-seguros h1, .seguros-vantagens h2, .perguntas-frequentes h2{
+        font-size: 3rem;
+    }
+    .seguros-vantagens .vantagens-item h3{
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    .seguros-vantagens-decoracao{
+        background-image: none;
+    }
+    .seguros .seguros-item{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        padding: 1.5rem 2rem 1.5rem 3rem;
+        gap: 0px 1.5rem;
+       
+    }
+    .seguros h3{
+        font-size: 1.8rem;
+    }
+    .seguros .seguros-item .preco {
+        font-size: 1.7rem; 
+    }
+    .beneficios li {
+        font-size: 1.1rem;
+    }
+    .beneficios li:first-child{
+        margin-top: 0px;
+    }
+
+}
+@media (max-width: 600px){
+    .seguros-vantagens .vantagens{
+        gap: 15px;
+        
+    }
+    .seguros-vantagens .vantagens-item h3{
+        font-size: 1.2rem;
+    }
+    .seguros-vantagens .vantagens-item img{
+        height: 25px;
+    }
+    .seguros-vantagens .vantagens-item p{
+        color: #9C9C9C;
+        max-width: 30ch;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+    .seguros-vantagens h2{
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+    .seguros-vantagens{
+        padding: 2rem 2rem 3rem 2rem;
+    }
+    .perguntas-frequentes{
+        padding: 2rem 2rem 3rem 2rem;
+    }
+    .perguntas-frequentes h2{
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+    .introducao-seguros h1{
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+    .introducao-seguros{
+        padding: 3rem 1.5rem 2rem 1.5rem;
+    }
+    .seguros-vantagens{
+        padding: 3rem 1.5rem 5rem 1.5rem;
+    }
+    .seguros .grid{
+        padding: 2rem 1.5rem 3rem 1.5rem;
+    }
+    .perguntas-frequentes{
+        padding: 3rem 1.5rem 4rem 1.5rem;
+    }
+    
+}
+@media (max-width: 500px) {
+    .beneficios li {
+        font-size: 1rem;
+    }
+    .seguros h3{
+        font-size: 1.6rem;
+    }
+    .seguros .seguros-item{
+        grid-template-columns: 1fr;
+    }
+    .seguros-item span {
+        display: inline-block;
+        text-align: start;
+    }
+   
+    .seguros .seguros-item .preco {
+        display: flex;
+        align-items: end;
+        gap: 3px;
+        font-size: 1.17rem;
+        padding-bottom: 10px;
+    }
+    .seguros .seguros-item .span2{
+        font-size: 0.5rem;
+        
+    }
 }

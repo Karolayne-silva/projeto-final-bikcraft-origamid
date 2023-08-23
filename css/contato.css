@@ -56,27 +56,30 @@
     padding-left: 30px;
 }
 .contato-dados{
-    background-color: var(--primaria); 
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px 20px;
+    background-color: var(--primaria);
     background-image: url("/img/dec/bottom-right.svg");
     background-repeat: no-repeat;
     background-position: bottom 17px right 18px;
     border-bottom-right-radius: 5px;    
     border-top-right-radius: 5px;
 }
-.contato-dados label{
+.contato-form{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 20px;
+    
+}
+.contato-form label{
     display: block;
     margin-bottom: 5px;
     font-weight: 600;
 }
-.contato-dados textarea{
+.contato-form textarea{
     margin-top: 0px;
 }
 
-.contato-dados input, .contato-dados textarea{
+.contato-form input, .contato-form textarea{
     padding: 1rem;
     width: 100%;
     background-color: #f7f7f7;
@@ -87,10 +90,10 @@
     font-family: "Popins", sans-serif;
     
 }
-.contato-dados .grid-email, .contato-dados .grid-textarea{
+.contato-form .grid-email, .contato-form .grid-textarea{
     grid-column: 1/-1;
 }
-.contato-dados input:focus, .contato-dados textarea:focus {
+.contato-form input:focus, .contato-form textarea:focus {
     outline: none;
     border-color: #FFBB00;
     border-width: 2px; 
@@ -99,17 +102,17 @@
     box-sizing: border-box;
 }
 
-.contato-dados .btn{
+.contato-form .btn{
     padding: 10px 25px;
     text-transform: uppercase;
     justify-self: left;
     margin-top: 20px;
 }
-.contato-dados .grid-email{
+.contato-form .grid-email{
     margin-top: 10px;
 }
-.contato-dados .grid-textarea label{
-    margin-bottom: 0px;
+.contato-form .grid-textarea label{
+    margin-bottom: 5px;
     margin-top: 10px;
 }
 

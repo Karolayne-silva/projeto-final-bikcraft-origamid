@@ -32,7 +32,7 @@
         </div>
     </section>
     <main class="page-contato-bg">
-        <div class="page-contato tela">
+        <section class="page-contato tela">
             <div class="contato-informacoes">
                 <h1 class="fontPopins">Loja Online</h1>
                 <div class="fontRoboto contato-endereco">
@@ -53,27 +53,28 @@
                     <img src="../img/redes/youtube-p.svg" alt="">
                 </div>
             </div>
-            <div class="contato-dados fontPopins">
-                <div>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome">
-                </div>
-                <div>
-                    <label for="numero">Número</label>
-                    <input type="number" name="numero" id="numero" placeholder="(21) 9999-9999">
-                </div>
-                <div class="grid-email">
-                    <label for="email-input">E-mail</label>
-                    <input type="email" name="email-input" id="email-input" placeholder="contato@gmail.com">
-                </div>
-                <div class="grid-textarea">
-                    <label for="text">Mensagem</label><br>
-	                <textarea id="text" name="text" rows="5" placeholder="O que você precisa?"></textarea>
-                </div>
-                <button class="btn">Enviar Mensagem</button>
-                
+            <div class="fontPopins contato-dados">
+                <form class="contato-form" action="./contatos.html">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div>
+                        <label for="numero">Número</label>
+                        <input type="number" name="numero" id="numero" placeholder="(21) 9999-9999">
+                    </div>
+                    <div class="grid-email">
+                        <label for="email-input">E-mail</label>
+                        <input type="email" name="email-input" id="email-input" placeholder="contato@gmail.com">
+                    </div>
+                    <div class="grid-textarea">
+                        <label for="text">Mensagem</label>
+                        <textarea id="text" name="text" rows="5" placeholder="O que você precisa?"></textarea>
+                    </div>
+                    <button class="btn">Enviar Mensagem</button>
+                </form>
             </div>
-        </div>
+        </section>
         
     </main>
     <article class="locais-container">
