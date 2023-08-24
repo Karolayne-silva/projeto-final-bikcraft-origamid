@@ -459,7 +459,7 @@
         padding-top: 0rem;
     }
     #home .seguros .grid {
-        padding: 3rem 2rem 4rem 2rem;
+        padding: 3rem 1.5rem 4rem 1.5rem;
     }
     .tecnologias .modelo {
         margin-top: 2rem;
@@ -477,6 +477,9 @@
     .parceiros li:nth-child(3), 
     .parceiros li:nth-child(7) {
         border-left: none;
+    }
+    .parceiros h2 {
+        padding: 0px 1.5rem 2rem 1.5rem;
     }
 }
 
