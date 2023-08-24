@@ -158,3 +158,97 @@
     position: relative;
     color: #CCCCCC;
 }
+
+@media (max-width: 900px){
+    .introducao-seguros h1{
+        font-size: 2.5rem;
+    }
+    #bicicleta-interna{
+        padding: 4rem 2rem 12rem 2rem;
+    }
+    .bicicleta-interna-seguros {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 3rem 2rem;
+    }
+    .bicicleta-interna-img{
+        margin-bottom: 0;
+        margin-top: -150px;
+    }
+    .bicicleta-interna-seguros .bicicleta-interna-conteudo h1 {
+        font-size: 2.8rem;
+        line-height: 1.1;
+        max-width: 20ch;
+    }
+    .bicicleta-interna-seguros .bicicleta-interna-conteudo p {
+        font-size: 1.3rem;
+    }
+    .bicicleta-interna-conteudo{
+        background-image: none;
+    }
+    .bicicleta-interna-informacoes {
+        grid-template-columns: 1fr;
+        
+    }
+    .bicicleta-interna-info-img img:nth-child(2), .bicicleta-interna-info-img img:nth-child(3){
+        display: none;
+    }
+    .bicicleta-interna-informacoes .info-conteudo {
+        gap: 1.5rem;
+    }
+    .bicicleta-interna-informacoes .info-conteudo p {
+        font-size: 1.3rem;
+        
+    }
+    .bicicleta-interna-footer {
+        padding-top: initial;
+    }
+}
+
+@media (max-width: 600px){
+    .bicicleta-interna-seguros .bicicleta-interna-conteudo h1 {
+        font-size: 2.5rem;
+    }
+    .bicicleta-interna-seguros {
+        padding: 3rem 1.5rem;
+    }
+    .bicicleta-interna-seguros .bicicleta-interna-conteudo p {
+        font-size: 1.1rem;
+    }
+    .bicicleta-interna-conteudo {
+        gap: 0.6rem;
+    }
+    .bicicleta-interna-informacoes {
+        padding: 1rem 1.5rem 5rem 1.5rem;
+        
+    }
+    #bicicleta-interna {
+        padding: 4rem 1.5rem 12rem 1.5rem;
+    }
+    .bicicleta-interna-informacoes .info-conteudo .info-conteudo-info {
+        padding: 1.5rem;
+    }
+    .bicicleta-interna-informacoes .info-conteudo p {
+        font-size: 1.1rem;
+    }
+    .bicicleta-interna-informacoes .info-conteudo .info-conteudo-info h2{
+        font-size: 0.7rem;
+    }
+    .bicicleta-interna-informacoes .info-conteudo .info-conteudo-info p{
+        font-size: 0.8rem;
+    }
+    .bicicleta-interna-informacoes .info-conteudo .info-conteudo-info img{
+        height: 20px;
+    }
+    .info-conteudo-ficha { 
+        padding: 1.5rem;
+        
+    }
+    .bicicleta-interna-informacoes .info-conteudo .info-conteudo-ficha p {
+        font-size: 0.9rem;
+    }
+    .bicicleta-interna-tags {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+    }
+}
