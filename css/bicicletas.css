@@ -112,20 +112,69 @@
 } 
 .produto-informacao .preco-produto{
     color: var(--primaria);
-    position: absolute;
     font-size: 1.2rem;
+    position: absolute;
+    display: inline-block;
     background-color: var(--cor1);
     padding: 0.5rem 1rem;
+    top: 20px;
+    right: 0px; 
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    top: 15px;
-    left: -134px;
 }
-.produto-informacao .conteudo-produto{
+.produto-informacao .img-produto{
     position: relative;
 }
+
 .produto-informacao {
     background-image: url("/img/dec/top-right.svg");
     background-repeat: no-repeat;
     background-position: right 50px;
+}
+
+@media (max-width: 1200px){
+    .introducao-bicicletas h1{
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 900px){
+    .introducao-bicicletas h1{
+        font-size: 2.5rem;
+    }
+    .produto-informacao .conteudo-produto h2{
+        font-size: 1.8rem;
+    }
+    .produto-informacao {
+        background-image: none;
+    }
+    .produto-informacao .conteudo-produto ul{
+        margin-top: 1rem;
+    }
+    .produto-informacao .conteudo-produto p{
+        margin-top: 1rem;
+    }
+    .bg{
+        background: linear-gradient(to left, #111 100%, #fff 50%);
+    }
+    .produto-informacao{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+   
+   
+}
+@media (max-width: 600px){
+    .produto-informacao{
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+    .produto-informacao .conteudo-produto .btn-caracteristicas{
+        grid-template-columns: 1fr;
+        align-items: end;
+    }
+    .produto-informacao .conteudo-produto li{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    } 
+
 }
