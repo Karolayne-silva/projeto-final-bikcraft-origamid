@@ -16,3 +16,22 @@
     max-width: 70ch;
     font-size: 1.1rem;
 }
+@media (max-width: 900px){
+    .termos-condicoes{
+        padding: 2rem 2rem 3rem 2rem;
+    }
+    .termos-condicoes h2 {
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 600px){
+    .termos-condicoes {
+        padding: 1rem 1.5rem 3rem 1.5rem;
+    }
+    .termos-condicoes .condicoes li {
+        font-size: 1rem;
+    }
+    .termos-condicoes h2 {
+        font-size: 1.3rem;
+    }
+}
