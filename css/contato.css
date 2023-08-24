@@ -33,8 +33,7 @@
     display: grid;
     grid-template-columns: 5fr 7fr;
     border-radius: 5px;
-    padding: 2rem 2rem 5rem 2rem;
-    
+    padding: 2rem 2rem 5rem 2rem;  
 }
 .contato-endereco{
     background-image: url("/img/icones/local.svg");
@@ -175,4 +174,81 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+@media (max-width: 1200px){
+    .locais h2{
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 900px){
+    .page-contato{
+        grid-template-columns: 1fr;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        border-radius: 5px;
+    }
+    .contato-informacoes {
+        padding: 2rem 2rem 2rem 2rem;
+        gap: 15px;
+        background-image: none;
+        border-radius: 0px;
+    }
+    .contato-informacoes h1 {
+        margin-bottom: 1rem;
+    }
+    .contato-dados {
+        background-image: none;
+        border-radius: 0px;
+    }
+    .contato-form{
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .locais {
+        padding: 2rem 1.5rem 4rem 1.5rem;
+    }
+    .locais h2{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .container-items{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .container-items-conteudo{
+        padding: 1.5rem;
+    }
+   
+    
+}
+@media (max-width: 600px){
+    .contato-form {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px 20px;
+    }
+    .contato-form input, .contato-form textarea{
+        font-size: 0.9rem;
+    }
+    .container-items-conteudo h3 {
+        font-size: 1.5rem;
+    }
+    .container-items-conteudo p {
+        font-size: 1rem;
+    }
+    .contato-informacoes {
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+    .contato-form{
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+    .container-items-conteudo{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .container-items-conteudo h3{
+        grid-column: initial;
+    }
+    
+    
+    
 }
