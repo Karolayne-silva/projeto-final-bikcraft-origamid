@@ -32,9 +32,10 @@
     position: absolute;
     background-color: #ffffff;
 }
-.navegacao a:hover::after{
+.navegacao a:hover::after, .navegacao a.ativo::after{
     width: 100%;
 }
+
 
 @media  (max-width:1000px){
     .navegacao a{
@@ -44,6 +45,9 @@
         border-radius: 5px;
     }
     .navegacao a:hover{
+        background-color: #2e2e2e;
+    }
+    .navegacao a.ativo{
         background-color: #2e2e2e;
     }
     .navegacao a::after{

@@ -219,3 +219,28 @@
 .radio-conteudo ul li:nth-child(4):before{
     background-image: url("/img/icones/rastreador.svg");  
 }
+
+@media (max-width: 1000px){
+    .form{
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem 3rem 1rem;
+    }
+    .fundo-preto{
+        background-image: none;
+        background-color: var(--cor1);
+        padding: 3rem 4rem;
+    }
+    .fundo-branco{
+        padding: 2rem;
+        background-image: none;
+    }
+}
+
+@media (max-width: 600px){
+    .fundo-preto{
+        padding: 3rem 2rem;
+    }
+    .fundo-branco{
+        padding: 1.5rem;
+    }
+}
